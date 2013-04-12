@@ -10,7 +10,7 @@ var led = new arduino.Led({
 
 app.post('/gong/', function(req, res){
 	res.status(200).end('Rang The Gong');
-	led.blink();
+	led.gong();
 });
 
 app.listen(3000);
